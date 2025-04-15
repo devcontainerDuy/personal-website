@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
+import type { Variant } from "@/types";
 
-export type ButtonVariant = "primary" | "secondary" | "outline";
 export type ButtonSize = "sm" | "md" | "lg";
 export type ButtonType = "button" | "submit" | "reset";
 
 export interface ButtonProps {
     children: ReactNode;
-    variant?: ButtonVariant;
+    variant?: Variant;
     size?: ButtonSize;
     className?: string;
     onClick?: () => void;
