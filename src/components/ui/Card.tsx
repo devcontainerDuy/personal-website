@@ -9,7 +9,7 @@ const Card: FC<CardProps> = ({ children, className = "", hoverEffect = true, var
 
     return (
         <div
-            className={`block max-w-sm bg-gray-900/50 border-gray-800 rounded-lg overflow-hidden relative ${
+            className={`block max-w-sm backdrop-blur-sm border rounded-lg overflow-hidden relative ${
                 hoverEffect ? "transition-transform hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/10" : ""
             } ${className} ${variantClasses[variant]}`}
         >
