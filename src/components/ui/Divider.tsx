@@ -5,7 +5,7 @@ const Divider: React.FC<DividerProps> = ({ className = "", vertical = false, col
 
     const gradientDirection = vertical ? "bg-gradient-to-b" : "bg-gradient-to-r"; // ['#4f46e5', '#8b5cf6', '#d946ef']
 
-    return <hr className={`${defaultClasses} ${gradientDirection} ${colors} ${className}`} />;
+    return <div className={`${defaultClasses} ${gradientDirection} ${colors} ${className}`} />;
 };
 
 export default Divider;
