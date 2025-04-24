@@ -4,6 +4,7 @@ import HeroSection from "@/components/layouts/HeroSection";
 import AboutSection from "@/components/layouts/AboutSection";
 import ExperienceSection from "@/components/layouts/ExperienceSection";
 import SkillsSection from "@/components/layouts/SkillsSection";
+import CertificatesSection from "@/components/layouts/CertificatesSection";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <AboutSection/>
             <ExperienceSection/>
             <SkillsSection/>
+            <CertificatesSection/>
             {/* <ProjectsSection/> */}
             {/* <ContactSection/> */}
             {/* <Footer/> */}

@@ -1,0 +1,36 @@
+{
+    "certificates": [
+        {
+            "id": 1,
+            "title": "AWS Certified Solutions Architect",
+            "organization": "Amazon Web Services",
+            "date": "2022",
+            "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+            "link": "#"
+        },
+        {
+            "id": 2,
+            "title": "Professional Full-Stack Engineer",
+            "organization": "Meta",
+            "date": "2021",
+            "image": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+            "link": "#"
+        },
+        {
+            "id": 3,
+            "title": "Machine Learning Specialization",
+            "organization": "Stanford University",
+            "date": "2020",
+            "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+            "link": "#"
+        },
+        {
+            "id": 4,
+            "title": "UI/UX Design Professional",
+            "organization": "Google",
+            "date": "2019",
+            "image": "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+            "link": "#"
+        }
+    ]
+}
