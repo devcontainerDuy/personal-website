@@ -103,7 +103,7 @@ const Background = () => {
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            stars.forEach((star, index) => {
+            for (const star of stars) {
                 // Breathing effect
                 star.angle += star.twinkleSpeed;
                 const scale = 0.5 + 0.5 * Math.sin(star.angle);
@@ -121,7 +121,7 @@ const Background = () => {
                     star.y = 0;
                     star.x = Math.random() * canvas.width;
                 }
-            });
+            }
 
             // Shooting stars
             if (shootingTimer <= 0 && Math.random() < 0.02) {
