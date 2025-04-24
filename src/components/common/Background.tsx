@@ -53,7 +53,7 @@ const Background = () => {
 
         const shootingStars: ShootingStar[] = [];
         let shootingTimer = 0;
-
+        let shootingDelay = Math.random() * 120 + 120; // random từ 2s đến 4s (60fps)
         let animationFrameId: number;
 
         // const animate = () => {
@@ -94,6 +94,7 @@ const Background = () => {
 
         //     animationFrameId = requestAnimationFrame(animate);
         // };
+
         const animate = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -124,18 +125,24 @@ const Background = () => {
             }
 
             // Shooting stars
-            if (shootingTimer <= 0 && Math.random() < 0.02) {
+            if (shootingTimer <= 0) {
+                // Tạo sao băng mới
+                const duration = 2; // thời gian tồn tại của sao băng (giây)
+                const frames = 60 * duration;
+                const speed = Math.random() * 4 + 6; // khoảng 6–10
+                const length = speed * frames * 0.5; // đủ dài để tạo hiệu ứng kéo đuôi
+
                 shootingStars.push({
                     x: Math.random() * canvas.width,
                     y: Math.random() * canvas.height * 0.5, // xuất hiện từ nửa trên
-                    length: Math.random() * 80 + 20,
-                    speed: Math.random() * 5 + 6,
+                    length,
+                    speed,
                     angle: Math.PI / 4 + (Math.random() - 0.5) * 0.2, // ví dụ bay chéo 45 độ " Math.PI / 4"
                     opacity: 1,
                 });
-                shootingTimer = Math.random() * 100 + 50; // thời gian giữa các sao băng
-            } else if (shootingTimer > 0) {
-                shootingTimer = 100;
+
+                shootingTimer = shootingDelay;
+                shootingDelay = Math.random() * 120 + 120; // lần sau delay mới
             } else {
                 shootingTimer--;
             }
@@ -146,12 +153,12 @@ const Background = () => {
                 ctx.lineWidth = 2;
                 ctx.beginPath();
                 ctx.moveTo(star.x, star.y);
-                ctx.lineTo(star.x - star.length, star.y + star.length);
+                ctx.lineTo(star.x - star.length * Math.cos(star.angle), star.y - star.length * Math.sin(star.angle));
                 ctx.stroke();
 
-                star.x += star.speed;
-                star.y -= star.speed;
-                star.opacity -= 0.01;
+                star.x += star.speed * Math.cos(star.angle);
+                star.y += star.speed * Math.sin(star.angle);
+                star.opacity -= 1 / (60 * 2); // 2 giây duration
 
                 if (star.opacity <= 0) shootingStars.splice(i, 1);
             }
