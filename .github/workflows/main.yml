@@ -1,0 +1,48 @@
+name: 🚀 Deploy on push to master
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      # - name: Set up Node
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: "20"
+      #     cache: "npm"
+
+    #   - name: 📝 Set environment variables
+    #     run: echo "REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}" >> .env
+
+      - name: 🔧 Install dependencies and 🔨 Build Project
+        run: |
+          npm install 
+          npm run build
+
+      - name: List output files
+        run: find build/ -print
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.SERVER }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          local-dir: build/
+          exclude: |
+            **/.git**
+            **/.git*/**
+            **/node_modules/**
+            **/.**
