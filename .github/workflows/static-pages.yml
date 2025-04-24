@@ -45,9 +45,6 @@ jobs:
 
             - name: Setup Pages
               uses: actions/configure-pages@v5
-              with:
-                # The directory to upload to GitHub Pages
-                static_site_generator: "react"
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
