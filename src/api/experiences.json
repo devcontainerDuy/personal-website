@@ -1,18 +1,21 @@
 {
     "experiences": [
         {
+            "id": 1,
             "title": "Senior Frontend Developer",
             "company": "Tech Innovations Inc.",
             "period": "2021 - Present",
             "description": "Led the frontend development team in creating responsive web applications using React, TypeScript, and Tailwind CSS. Implemented state management with Redux and integrated REST APIs."
         },
         {
+            "id": 2,
             "title": "Full Stack Developer",
             "company": "Digital Solutions Ltd.",
             "period": "2018 - 2021",
             "description": "Developed full-stack applications using the MERN stack. Created RESTful APIs, implemented authentication systems, and designed database schemas for various client projects."
         },
         {
+            "id": 3,
             "title": "Junior Web Developer",
             "company": "WebCraft Studios",
             "period": "2016 - 2018",
