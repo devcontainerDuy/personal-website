@@ -47,7 +47,6 @@ jobs:
               uses: actions/configure-pages@v5
               with:
                 # The directory to upload to GitHub Pages
-                publish_dir: ./dist
                 static_site_generator: "react"
 
             - name: Upload artifact
