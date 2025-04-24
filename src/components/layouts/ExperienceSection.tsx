@@ -33,7 +33,7 @@ const ExperienceSection = () => {
                                             <div className="relative z-10">
                                                 <div className="flex items-center mb-4">
                                                     <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center mr-4">
-                                                        <BriefcaseConveyorBelt size={18} />
+                                                        <BriefcaseConveyorBelt size={18} className="text-blue-400" />
                                                     </div>
                                                     <div className="">
                                                         <h3 className="text-lg font-medium">{exp.title}</h3>
