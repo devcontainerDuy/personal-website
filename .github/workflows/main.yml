@@ -46,7 +46,6 @@ jobs:
                   username: ${{ secrets.USERNAME }}
                   password: ${{ secrets.PASSWORD }}
                   local-dir: dist/
-                  server-dir: /home/tvyzbbaj/personal.30glow.site
                   dangerous-clean-slate: true  # Xóa file cũ trước khi deploy
                   exclude: |
                       **/.git**
