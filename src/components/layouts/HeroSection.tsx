@@ -1,8 +1,10 @@
 import Text from "@/components/ui/Text";
 import Button from "@/components/ui/Button";
 import { ChevronDown, Facebook, Github, Linkedin } from "lucide-react";
+import { useSmoothScroll } from "@/components/hooks/useSmoothScroll";
 
 const HeroSection = () => {
+    const { getClickHandler } = useSmoothScroll();
     return (
         <section className="relative min-h-screen w-full flex items-center justify-center px-4 py-20">
             <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2">
@@ -10,7 +12,7 @@ const HeroSection = () => {
             </div>
             <div className="max-w-4xl mx-auto text-center relative z-10">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                    <Text>Hello, I'm Developer</Text>
+                    <Text>Hello, I'm Tran Khanh Duy</Text>
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-300 mb-8">Full Stack Web Developer & Backend Programming Enthusiast</p>
 
@@ -41,10 +43,10 @@ const HeroSection = () => {
                     </a>
                 </div>
 
-                <a href="#about" className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-gray-400 hover:text-white transition-colors">
+                <button type="button" className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center text-gray-400 hover:text-white transition-colors" onClick={getClickHandler("#about")}>
                     <span className="text-sm mb-2">Scroll Down</span>
                     <ChevronDown size={24} className="animate-bounce" />
-                </a>
+                </button>
             </div>
         </section>
     );
