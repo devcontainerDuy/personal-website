@@ -16,7 +16,7 @@ export type InputType =
     | "hidden"
     | "checkbox"
     | "radio";
-export type InputVariant = "primary" | "danger" | "success";
+export type InputVariant = "primary"| "secondary" | "danger" | "success";
 export type InputSize = "sm" | "md" | "lg";
 export type InputValue = string | number | readonly string[] | undefined;
 
