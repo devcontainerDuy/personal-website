@@ -4,7 +4,7 @@ import { getVariantClass } from "@/lib/getVariantClass";
 
 const Button: FC<ButtonProps> = ({ children, variant = "primary", size = "md", className = "", onClick, href, type = "button", disabled = false }) => {
     const baseClasses =
-        "inline-flex items-center justify-center font-medium rounded-md transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500";
+        "inline-flex items-center justify-center font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500";
 
     const sizeClasses = {
         sm: "text-xs px-3 py-1.5",

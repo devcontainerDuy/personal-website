@@ -5,16 +5,19 @@ import AboutSection from "@/components/layouts/AboutSection";
 import ExperienceSection from "@/components/layouts/ExperienceSection";
 import SkillsSection from "@/components/layouts/SkillsSection";
 import CertificatesSection from "@/components/layouts/CertificatesSection";
+import ProjectsSection from "@/components/layouts/ProjectsSection";
+import ActivitiesSection from "@/components/layouts/ActivitiesSection";
 
 function App() {
     return (
         <Template>
-            <HeroSection/>
-            <AboutSection/>
-            <ExperienceSection/>
-            <SkillsSection/>
-            <CertificatesSection/>
-            {/* <ProjectsSection/> */}
+            <HeroSection />
+            <AboutSection />
+            <ExperienceSection />
+            <SkillsSection />
+            <CertificatesSection />
+            <ProjectsSection />
+            <ActivitiesSection />
             {/* <ContactSection/> */}
             {/* <Footer/> */}
             {/* <ScrollToTopButton/> */}

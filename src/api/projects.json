@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "title": "E-Commerce Platform",
+            "description": "A full-featured e-commerce platform with product management, shopping cart, and payment processing.",
+            "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            "category": "Full Stack",
+            "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "title": "AI Image Generator",
+            "description": "An application that generates images based on text prompts using advanced AI models.",
+            "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            "category": "AI/ML",
+            "technologies": ["Python", "TensorFlow", "React", "Flask"],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "title": "Task Management Dashboard",
+            "description": "A productivity application for managing tasks, projects, and team collaboration.",
+            "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            "category": "Frontend",
+            "technologies": ["React", "Redux", "Tailwind CSS", "Firebase"],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "title": "Real-time Chat Application",
+            "description": "A real-time messaging platform with features like group chats, file sharing, and notifications.",
+            "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            "category": "Full Stack",
+            "technologies": ["React", "Socket.io", "Express", "MongoDB"],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "title": "Portfolio Website Template",
+            "description": "A customizable portfolio website template for developers and designers.",
+            "image": "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            "category": "Frontend",
+            "technologies": ["React", "Tailwind CSS", "Framer Motion"],
+            "github": "#",
+            "demo": "#"
+        },
+        {
+            "title": "Sentiment Analysis Tool",
+            "description": "An NLP-based application that analyzes the sentiment of text inputs like reviews and social media posts.",
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            "category": "AI/ML",
+            "technologies": ["Python", "NLTK", "React", "Flask"],
+            "github": "#",
+            "demo": "#"
+        }
+    ],
+    "categories": ["All", "Frontend", "Full Stack", "AI/ML"]
+}

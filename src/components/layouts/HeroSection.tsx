@@ -15,10 +15,10 @@ const HeroSection = () => {
                 <p className="text-xl md:text-2xl text-gray-300 mb-8">Full Stack Web Developer & Backend Programming Enthusiast</p>
 
                 <div className="flex flex-wrap gap-4 justify-center mb-12">
-                    <Button href="#contact" size="lg">
+                    <Button className="rounded-md" href="#contact" size="lg">
                         Contact Me
                     </Button>
-                    <Button variant="outline" href="#projects" size="lg">
+                    <Button className="rounded-md" variant="outline" href="#projects" size="lg">
                         View Projects
                     </Button>
                 </div>
