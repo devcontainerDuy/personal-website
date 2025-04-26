@@ -14,6 +14,7 @@ import Footer from "@/components/layouts/Footer";
 function App() {
     return (
         <Template>
+            <h1>hi</h1>
             <HeroSection />
             <AboutSection />
             <ExperienceSection />
