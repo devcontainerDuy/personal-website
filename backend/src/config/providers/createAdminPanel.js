@@ -1,4 +1,5 @@
 import AdminJS from "adminjs";
+import bcrypt from "bcryptjs";
 import * as AdminJSMongoose from "@adminjs/mongoose";
 import AdminJSExpress from "@adminjs/express";
 import mongoose from "mongoose";
@@ -28,6 +29,33 @@ const createAdminPanel = () => {
                         password: {
                             type: "password",
                             isRequired: true,
+                        },
+                    },
+                    actions: {
+                        new: {
+                            before: async (request) => {
+                                if (request.payload?.password) {
+                                    const hashed = await bcrypt.hash(request.payload.password, 10);
+                                    request.payload.password = hashed;
+                                }
+                                return request;
+                            },
+                        },
+                        edit: {
+                            after: async (response) => {
+                                response.record.params.password = "";
+                                return response;
+                            },
+                            before: async (request) => {
+                                const { password, ...rest } = request.payload;
+                                if (password) {
+                                    const hashed = await bcrypt.hash(password, 10);
+                                    request.payload.password = hashed;
+                                } else {
+                                    request.payload = rest;
+                                }
+                                return request;
+                            },
                         },
                     },
                     sort: {
