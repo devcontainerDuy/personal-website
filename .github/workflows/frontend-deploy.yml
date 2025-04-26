@@ -36,6 +36,7 @@ jobs:
               with:
                   path: |
                       frontend/node_modules/**
+                      frontend/.npm
                   key: ${{ runner.os }}-frontend-${{ hashFiles('**/frontend/package-lock.json') }}
                   restore-keys: |
                       ${{ runner.os }}-frontend-
@@ -46,7 +47,6 @@ jobs:
             - name: 🔧 Install dependencies and 🔨 Build Project
               run: |
                   npm ci --prefer-offline
-                  npm install 
                   npm run build
 
             - name: 🕵️ Verify dist/ contents
