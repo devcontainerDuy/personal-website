@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import route from "./router/index.route.js";
 import connectDatabase from "./config/database/index.js";
 import createAdminPanel from "./config/providers/createAdminPanel.js";
@@ -11,6 +12,7 @@ const { admin, adminRouter } = createAdminPanel();
 app.use(admin.options.rootPath, adminRouter);
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
