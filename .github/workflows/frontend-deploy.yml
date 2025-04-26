@@ -1,43 +1,57 @@
-name: 🚀 Deploy on push to master
+name: 🚀 Deploy for frontend
 
 on:
     push:
         branches:
             - master
+        paths:
+            - frontend/**
     pull_request:
         branches:
             - master
+        paths:
+            - frontend/**
 
 jobs:
     deploy:
         name: 🎉 Deploy
         runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: ./frontend
 
         steps:
             - name: 🚚 Get latest code
               uses: actions/checkout@v4
 
-            - name: Set up Node
+            - name: ⎔ Setup Node
               uses: actions/setup-node@v4
               with:
                   node-version: "20"
                   cache: "npm"
+
+            - name: 📦 Cache dependencies
+              uses: actions/cache@v4
+              with:
+                  path: |
+                      frontend/node_modules/**
+                  key: ${{ runner.os }}-frontend-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-frontend-
 
             #   - name: 📝 Set environment variables
             #     run: echo "REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}" >> .env
 
             - name: 🔧 Install dependencies and 🔨 Build Project
               run: |
+                  npm ci --prefer-offline
                   npm install 
                   npm run build
 
-            # - name: List output files
-            #   run: find dist/ -print
-
             - name: 🕵️ Verify dist/ contents
               run: |
-                  ls -R dist/
-                  echo "Total files in dist: $(find dist/ -type f | wc -l)"
+                  ls -R frontend/dist/
+                  echo "Total files in dist: $(find frontend/dist/ -type f | wc -l)"
 
             - name: 📂 Sync files
               uses: SamKirkland/FTP-Deploy-Action@4.3.3
@@ -46,7 +60,7 @@ jobs:
                   username: ${{ secrets.USERNAME }}
                   password: ${{ secrets.PASSWORD }}
                   local-dir: dist/
-                  dangerous-clean-slate: true  # Xóa file cũ trước khi deploy
+                  dangerous-clean-slate: true # Xóa file cũ trước khi deploy
                   exclude: |
                       **/.git**
                       **/.git*/**
