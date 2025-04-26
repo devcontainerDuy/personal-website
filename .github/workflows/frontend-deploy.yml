@@ -51,7 +51,8 @@ jobs:
 
             - name: 🕵️ Verify dist/ contents
               run: |
-                  ls -R frontend/dist/
+                  echo ls -R frontend/dist/ 
+                  echo ls
                   echo "Total files in dist: $(find frontend/dist/ -type f | wc -l)"
 
             - name: 📂 Sync files
