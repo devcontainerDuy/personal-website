@@ -60,7 +60,7 @@ jobs:
                   server: ${{ secrets.SERVER }}
                   username: ${{ secrets.USERNAME }}
                   password: ${{ secrets.PASSWORD }}
-                  local-dir: dist/
+                  local-dir: frontend/dist/
                   dangerous-clean-slate: true # Xóa file cũ trước khi deploy
                   exclude: |
                       **/.git**
