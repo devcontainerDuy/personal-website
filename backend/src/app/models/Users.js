@@ -1,11 +1,9 @@
 import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
-const ObjectId = Schema.ObjectId;
 
 const userSchema = new Schema(
     {
-        _id: { type: ObjectId },
         name: { type: String, maxLength: 255, required: true, default: "" },
         email: {
             type: String,
@@ -34,7 +32,6 @@ const userSchema = new Schema(
         isVerified: { type: Boolean, default: false },
     },
     {
-        _id: false,
         timestamps: true,
     }
 );
