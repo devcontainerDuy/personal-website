@@ -2,7 +2,7 @@ import userRoutes from "./user/index.route.js";
 
 const route = (app) => {
     app.get("/", (req, res) => {
-        res.send("Hello World!");
+        res.render("users/index", { title: "Express" });
     });
 
     app.get("/api", (req, res) => {
