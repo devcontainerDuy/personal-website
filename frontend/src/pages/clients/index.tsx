@@ -3,7 +3,8 @@ import HeroSection from "@/components/layouts/HeroSection";
 import AboutSection from "@/components/layouts/AboutSection";
 import ExperienceSection from "@/components/layouts/ExperienceSection";
 import SkillsSection from "@/components/layouts/SkillsSection";
-import CertificatesSection from "@/components/layouts/CertificatesSection";
+// import CertificatesSection from "@/components/layouts/CertificatesSection";
+import EducationSection from "@/components/layouts/EducationSection";
 import ProjectsSection from "@/components/layouts/ProjectsSection";
 import ActivitiesSection from "@/components/layouts/ActivitiesSection";
 import ReferencesSection from "@/components/layouts/ReferencesSection";
@@ -17,7 +18,8 @@ const index = () => {
             <AboutSection />
             <ExperienceSection />
             <SkillsSection />
-            <CertificatesSection />
+            {/* <CertificatesSection /> */}
+            <EducationSection />
             <ProjectsSection />
             <ActivitiesSection />
             <ReferencesSection />

@@ -2,24 +2,24 @@
     "experiences": [
         {
             "id": 1,
-            "title": "Senior Frontend Developer",
-            "company": "Tech Innovations Inc.",
-            "period": "2021 - Present",
-            "description": "Led the frontend development team in creating responsive web applications using React, TypeScript, and Tailwind CSS. Implemented state management with Redux and integrated REST APIs."
+            "title": "Intern Fullstack web Developer",
+            "company": "MEVIVU TECHNOLOGY",
+            "period": "09/2024 - 11/2024",
+            "description": "Using Visual Studio Code to develop web applications using Laravel Framework and jQuery, build RESTful APIs to integrate for mobile applications, use WordPress to build websites on demand, and use Paint to create logos and banners for customers. Implement APIs that work well for mobile applications, and build websites on the WordPress platform to meet requirements."
         },
         {
             "id": 2,
-            "title": "Full Stack Developer",
-            "company": "Digital Solutions Ltd.",
-            "period": "2018 - 2021",
-            "description": "Developed full-stack applications using the MERN stack. Created RESTful APIs, implemented authentication systems, and designed database schemas for various client projects."
+            "title": "Intern fullstack web Developer",
+            "company": "GIA THANH REFRIGERATION JSC",
+            "period": "05/2024 - 07/2024",
+            "description": "Use Visual Studio Code to develop and maintain web applications using React and Laravel, and develop and maintain a RESTful API to integrate data between the frontend and backend. Improve UI/UX performance, build and deploy RESTful APIs, and enhance system integration capabilities."
         },
         {
             "id": 3,
-            "title": "Junior Web Developer",
-            "company": "WebCraft Studios",
-            "period": "2016 - 2018",
-            "description": "Built and maintained websites for small to medium businesses. Worked with HTML, CSS, JavaScript, and WordPress. Collaborated with designers to implement responsive layouts."
+            "title": "Data Entry Clerk",
+            "company": "BESSFU CO.,LTD",
+            "period": "03/2024 - 05/2024",
+            "description": "Enter data, verify and update information, and assist with data management-related tasks. Ensure data accuracy, reduce data processing and reporting time, create and maintain spreadsheets and databases to improve work efficiency."
         }
     ]
 }

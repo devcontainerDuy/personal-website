@@ -7,39 +7,39 @@ const SkillsSection = () => {
     const skillCategories = [
         {
             id: 1,
-            title: "Frontend Development",
-            icon: <CodeIcon size={24} className="text-blue-400" />,
-            skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Redux"],
+            title: "Backend Development",
+            icon: <ServerIcon size={24} className="text-purple-400" />,
+            skills: ["PHP", "Laravel", "Node.js", "Express", "RESTful APIs"],
         },
         {
             id: 2,
-            title: "Backend Development",
-            icon: <ServerIcon size={24} className="text-purple-400" />,
-            skills: ["Node.js", "Express", "Python", "Django", "RESTful APIs", "GraphQL"],
+            title: "Frontend Development",
+            icon: <CodeIcon size={24} className="text-blue-400" />,
+            skills: ["React", "TypeScript", "jQuery", "JavaScript", "Tailwind CSS", "Bootstrap"],
         },
         {
             id: 3,
             title: "UI/UX Design",
             icon: <PaletteIcon size={24} className="text-pink-400" />,
-            skills: ["Figma", "Adobe XD", "Responsive Design", "User Research", "Wireframing"],
+            skills: ["Figma", "Responsive Design"],
         },
         {
             id: 4,
             title: "Database",
             icon: <DatabaseIcon size={24} className="text-green-400" />,
-            skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"],
+            skills: ["MongoDB", "MySQL"],
         },
         {
             id: 5,
             title: "AI & ML",
             icon: <BrainIcon size={24} className="text-yellow-400" />,
-            skills: ["TensorFlow", "PyTorch", "Natural Language Processing", "Computer Vision"],
+            skills: ["ChatGPT", "Gemini", "Deep seek", "Copilot"],
         },
         {
             id: 6,
             title: "Soft Skills",
             icon: <UsersIcon size={24} className="text-orange-400" />,
-            skills: ["Team Leadership", "Project Management", "Communication", "Problem Solving"],
+            skills: [ "Project Management", "Communication", "Problem Solving"],
         },
     ];
 
