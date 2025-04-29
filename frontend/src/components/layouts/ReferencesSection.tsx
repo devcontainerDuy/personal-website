@@ -20,13 +20,13 @@ const ReferencesSection = () => {
                                 <div className="mb-6">
                                     <QuoteIcon size={32} className="text-blue-400 opacity-50" />
                                 </div>
-                                <p className="text-gray-300 italic mb-6 flex-grow">"{testimonial.quote}"</p>
+                                {/* <p className="text-gray-300 italic mb-6 flex-grow">"{testimonial.quote}"</p> */}
                                 <div className="flex items-center">
                                     <img src={testimonial.image} alt="" className="w-12 h-12 rounded-full object-cover mr-4" />
                                     <div>
                                         <h4 className="font-medium">{testimonial.author}</h4>
                                         <p className="text-sm  text-gray-400">{testimonial.position}</p>
-                                        <p className="text-xs font-bold text-gray-400">Email: d1A8o@example.com</p>
+                                        <p className="text-xs font-bold text-gray-400">Email: {testimonial.email}</p>
                                     </div>
                                 </div>
                             </div>
