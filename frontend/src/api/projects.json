@@ -1,59 +1,32 @@
 {
     "projects": [
         {
-            "title": "E-Commerce Platform",
-            "description": "A full-featured e-commerce platform with product management, shopping cart, and payment processing.",
+            "title": "30Glow - Haircut Appointment System",
+            "description": "Build a CMS with VS Code, integrate Inertia React for the interface, and an API for the backend. Support Google login, VNPay payment. Functions: view products/services, schedule services (haircut), purchase, chat with AI, and staff.",
             "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
             "category": "Full Stack",
-            "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
-            "github": "#",
-            "demo": "#"
+            "technologies": ["Laravel", "Inertia", "React", "MySQL", "CI/CD", "API RESTful", "Bootstrap", "MUI"],
+            "github": "https://github.com/devcontainerDuy/30_Glow",
+            "demo": "https://30glow.site/"
         },
         {
-            "title": "AI Image Generator",
-            "description": "An application that generates images based on text prompts using advanced AI models.",
-            "image": "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-            "category": "AI/ML",
-            "technologies": ["Python", "TensorFlow", "React", "Flask"],
-            "github": "#",
-            "demo": "#"
-        },
-        {
-            "title": "Task Management Dashboard",
-            "description": "A productivity application for managing tasks, projects, and team collaboration.",
+            "title": "Online movie viewing website, Movie Fanatic World",
+            "description": "Build a free movie streaming app with VS Code. Users can easily search and filter movies by tags and categories. They can also save their favorite films for later viewing. The app is built with React and uses the API to fetch movie data. It features a responsive design, ensuring a seamless experience on both desktop and mobile devices.",
             "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
             "category": "Frontend",
-            "technologies": ["React", "Redux", "Tailwind CSS", "Firebase"],
-            "github": "#",
-            "demo": "#"
-        },
-        {
-            "title": "Real-time Chat Application",
-            "description": "A real-time messaging platform with features like group chats, file sharing, and notifications.",
-            "image": "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-            "category": "Full Stack",
-            "technologies": ["React", "Socket.io", "Express", "MongoDB"],
-            "github": "#",
-            "demo": "#"
+            "technologies": ["React", "Redux", "Bootstrap", "CI/CD"],
+            "github": "https://github.com/devcontainerDuy/thegioicuongphim",
+            "demo": "https://thegioicuongphim.30glow.site/"
         },
         {
             "title": "Portfolio Website Template",
-            "description": "A customizable portfolio website template for developers and designers.",
+            "description": "This template provides a clean and professional foundation for showcasing your skills, projects, and experience. Built with flexibility in mind, it allows for easy customization to reflect your unique personal brand and style. Whether you're a developer looking to display your coding prowess or a designer eager to exhibit your creative work, this template offers a straightforward and effective way to build your online presence.",
             "image": "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
             "category": "Frontend",
-            "technologies": ["React", "Tailwind CSS", "Framer Motion"],
-            "github": "#",
-            "demo": "#"
-        },
-        {
-            "title": "Sentiment Analysis Tool",
-            "description": "An NLP-based application that analyzes the sentiment of text inputs like reviews and social media posts.",
-            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-            "category": "AI/ML",
-            "technologies": ["Python", "NLTK", "React", "Flask"],
-            "github": "#",
-            "demo": "#"
+            "technologies": ["React", "Tailwind CSS", "TypeScript", "CI/CD"],
+            "github": "https://github.com/devcontainerDuy/personal-website",
+            "demo": "https://personal.30glow.site/"
         }
     ],
-    "categories": ["All", "Frontend", "Full Stack", "AI/ML"]
+    "categories": ["All", "Frontend", "Full Stack"]
 }

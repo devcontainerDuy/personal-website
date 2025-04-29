@@ -28,7 +28,7 @@ const Footer = () => {
                             <Instagram size={20} />
                         </a>
                     </div>
-                    <div className="text-sm text-gray-400">© {currentYear} DevName. All rights reserved.</div>
+                    <div className="text-sm text-gray-400">© {currentYear} Tran Khanh Duy. All rights reserved.</div>
                 </div>
             </div>
         </footer>
